@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | E-Commerce Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="E-Commerce Logo">
+            </a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <div class="nav-icons">
+
+            <a href="login.html" title="Login">
+                <img src="images/login logo.png" alt="Login">
+            </a>
+
+            <a href="cart.html" title="Shopping Cart">
+                <img src="images/cart.png" alt="Shopping Cart">
+                <span class="cart-count">0</span>
+            </a>
+
+            <a href="#" title="Notifications">
+                <img src="images/bell.png" alt="Notifications">
+            </a>
+
+            <button class="menu-btn" title="Menu">
+                <img src="images/hrztl.png" alt="Menu">
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- CART -->
+    <main class="cart-page">
+
+        <div class="cart-heading">
+            <h1>Shopping Cart</h1>
+            <p>Review your items before checkout.</p>
+        </div>
+
+
+        <div class="cart-container">
+
+            <!-- CART ITEMS -->
+            <section class="cart-items">
+
+                <div id="cartItems">
+                    <!-- JavaScript will add products here -->
+                </div>
+
+            </section>
+
+
+            <!-- ORDER SUMMARY -->
+            <aside class="cart-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotal">$0.00</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span id="shippingCost">$0.00</span>
+                </div>
+
+                <hr>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+
+              <a href="checkout.html" class="checkout-btn">
+                 Proceed to Checkout
+             </a>
+
+                <a href="home.html" class="continue-shopping">
+                    Continue Shopping
+                </a>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | E-Commerce Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="index.html">MyStore</a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <div class="nav-icons">
+
+            <a href="login.html" title="Login">
+                <img src="images/login.png" alt="Login">
+            </a>
+
+            <a href="cart.html" title="Shopping Cart">
+                <img src="images/cart.png" alt="Shopping Cart">
+                <span class="cart-count">0</span>
+            </a>
+
+            <a href="#" title="Notifications">
+                🔔
+            </a>
+
+            <button class="menu-btn">☰</button>
+
+        </div>
+
+    </header>
+
+
+    <!-- CHECKOUT -->
+    <main class="checkout-page">
+
+        <div class="checkout-heading">
+            <h1>Checkout</h1>
+            <p>Complete your details to place your order.</p>
+        </div>
+
+
+        <div class="checkout-container">
+
+            <!-- CUSTOMER DETAILS -->
+            <section class="checkout-form">
+
+                <h2>Delivery Information</h2>
+
+                <form id="checkoutForm">
+
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input
+                            type="text"
+                            id="fullName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter your phone number"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea
+                            id="address"
+                            rows="4"
+                            placeholder="Enter your delivery address"
+                            required
+                        ></textarea>
+                    </div>
+
+
+                    <div class="checkout-row">
+
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input
+                                type="text"
+                                id="city"
+                                placeholder="City"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pincode">Pincode</label>
+                            <input
+                                type="text"
+                                id="pincode"
+                                placeholder="Pincode"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <h2>Payment Method</h2>
+
+                    <div class="payment-options">
+
+                        <label class="payment-option">
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="cod"
+                                checked
+                            >
+                            Cash on Delivery
+                        </label>
+
+                        <label class="payment-option">
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="card"
+                            >
+                            Credit / Debit Card
+                        </label>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="place-order-btn"
+                    >
+                        Place Order
+                    </button>
+
+                </form>
+
+            </section>
+
+
+            <!-- ORDER SUMMARY -->
+            <aside class="checkout-summary">
+
+                <h2>Order Summary</h2>
+
+                <div id="checkoutItems">
+                    <!-- Products will appear here -->
+                </div>
+
+                <hr>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="checkoutSubtotal">$0.00</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span id="checkoutShipping">$0.00</span>
+                </div>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="checkoutTotal">$0.00</span>
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

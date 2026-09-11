@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop | E-Commerce Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="E-Commerce Logo">
+            </a>
+        </div>
+
+        <nav class="nav-links">
+          <a href="home.html" class="active">Home</a>
+          <a href="about.html">About</a>
+         <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <div class="nav-icons">
+
+            <a href="login.html" title="Login">
+                <img src="images/login logo.png" alt="Login">
+            </a>
+
+        <a href="cart.html" title="Cart">
+    <img src="images/cart.png" alt="Shopping Cart">
+    <span class="cart-count">0</span>
+</a>
+
+            <a href="#" title="Notifications">
+                <img src="images/bell.png" alt="Notifications">
+            </a>
+<button class="menu-btn" id="menuBtn" title="Menu" type="button">
+    <img src="images/hrztl.png" alt="Menu">
+</button>
+
+<div class="menu-dropdown" id="menuDropdown">
+    <a href="home.html">🏠 Home</a>
+    <a href="about.html">ℹ️ About</a>
+    <a href="contact.html">📞 Contact Us</a>
+    <a href="login.html">👤 Login</a>
+    <a href="cart.html">🛒 My Cart</a>
+</div>
+
+        </div>
+
+    </header>
+
+
+    <!-- SALE BANNER -->
+    <section class="sale-banner">
+
+        <div>
+            <p class="sale-small">LIMITED TIME OFFER</p>
+
+            <h1>Midnight Sale</h1>
+
+            <p>
+                Get amazing deals on fashion, jewelry and electronics.
+            </p>
+
+            <button class="shop-btn">
+                Shop Now
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- SEARCH AND CATEGORIES -->
+    <section class="shop-controls">
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+        </div>
+
+        <div class="categories">
+
+            <button class="category-btn active" data-category="all">
+                All
+            </button>
+
+            <button class="category-btn" data-category="fashion">
+                Fashion
+            </button>
+
+            <button class="category-btn" data-category="jewelry">
+                Jewelry
+            </button>
+
+            <button class="category-btn" data-category="electronics">
+                Electronics
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <main class="products-section">
+
+        <div class="section-heading">
+
+            <h2>Featured Products</h2>
+
+            <p>Discover our popular products and exclusive deals.</p>
+
+        </div>
+
+
+        <div class="product-grid">
+
+
+            <!-- PRODUCT 1 -->
+            <div class="product-card" data-category="fashion">
+
+                <div class="product-image">
+                    <img src="images/Product-1.png"
+                         alt="Fjallraven Backpack">
+                </div>
+
+                <span class="discount">13% OFF</span>
+
+                <div class="product-info">
+
+                    <h3>Fjallraven Backpack</h3>
+
+                    <p class="description">
+                        Your perfect pack for everyday use and walks in the forest.
+                    </p>
+
+                    <div class="price">
+                        <span class="old-price">$109.95</span>
+                        <span class="new-price">$95.50</span>
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+            <div class="product-card" data-category="fashion">
+
+                <div class="product-image">
+                    <img src="images/Product-2.png"
+                         alt="Mens Casual T-Shirt">
+                </div>
+
+                <span class="discount">22% OFF</span>
+
+                <div class="product-info">
+
+                    <h3>Mens Casual T-Shirt</h3>
+
+                    <p class="description">
+                        Slim fitting style with comfortable everyday wearing.
+                    </p>
+
+                    <div class="price">
+                        <span class="old-price">$22.30</span>
+                        <span class="new-price">$17.50</span>
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+            <div class="product-card" data-category="fashion">
+
+                <div class="product-image">
+                    <img src="images/Product-3.png"
+                         alt="Mens Cotton Jacket">
+                </div>
+
+                <span class="discount">15% OFF</span>
+
+                <div class="product-info">
+
+                    <h3>Mens Cotton Jacket</h3>
+
+                    <p class="description">
+                        Great outerwear jacket for spring, autumn and travel.
+                    </p>
+
+                    <div class="price">
+                        <span class="old-price">$55.99</span>
+                        <span class="new-price">$47.50</span>
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+            <div class="product-card" data-category="fashion">
+
+                <div class="product-image">
+                    <img src="images/Product-4.png"
+                         alt="Mens Casual Slim Fit">
+                </div>
+
+                <span class="discount">34% OFF</span>
+
+                <div class="product-info">
+
+                    <h3>Mens Casual Slim Fit</h3>
+
+                    <p class="description">
+                        Comfortable slim fit style for everyday use.
+                    </p>
+
+                    <div class="price">
+                        <span class="old-price">$15.99</span>
+                        <span class="new-price">$10.50</span>
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 5 -->
+            <div class="product-card" data-category="jewelry">
+
+                <div class="product-image">
+                    <img src="images/Product-5.png"
+                         alt="Dragon Station Chain Bracelet">
+                </div>
+
+                <span class="discount">28% OFF</span>
+
+                <div class="product-info">
+
+                    <h3>Dragon Station Chain Bracelet</h3>
+
+                    <p class="description">
+                        A stylish mythical dragon inspired bracelet.
+                    </p>
+
+                    <div class="price">
+                        <span class="old-price">$696.00</span>
+                        <span class="new-price">$500.00</span>
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 6 -->
+            <div class="product-card" data-category="jewelry">
+
+                <div class="product-image">
+                    <img src="images/Product-6.png"
+                         alt="Solid Gold Petite Pave">
+                </div>
+
+                <span class="discount">11% OFF</span>
+
+                <div class="product-info">
+
+                    <h3>Solid Gold Petite Pave</h3>
+
+                    <p class="description">
+                        Elegant jewelry designed for a premium look.
+                    </p>
+
+                    <div class="price">
+                        <span class="old-price">$168.00</span>
+                        <span class="new-price">$150.00</span>
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 7 -->
+            <div class="product-card" data-category="jewelry">
+
+                <div class="product-image">
+                    <img src="images/Product-7.png"
+                         alt="White Gold Princess Ring">
+                </div>
+
+                <span class="discount">15% OFF</span>
+
+                <div class="product-info">
+
+                    <h3>White Gold Princess Ring</h3>
+
+                    <p class="description">
+                        Classic created engagement ring with elegant styling.
+                    </p>
+
+                    <div class="price">
+                        <span class="old-price">$55.99</span>
+                        <span class="new-price">$47.50</span>
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 8 -->
+            <div class="product-card" data-category="jewelry">
+
+                <div class="product-image">
+                    <img src="images/Product-8.png"
+                         alt="Owl Rose Gold Plated Ring">
+                </div>
+
+                <span class="discount">19% OFF</span>
+
+                <div class="product-info">
+
+                    <h3>Owl Rose Gold Plated</h3>
+
+                    <p class="description">
+                        Stylish rose gold plated design for a modern look.
+                    </p>
+
+                    <div class="price">
+                        <span class="old-price">$19.03</span>
+                        <span class="new-price">$15.50</span>
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 9 -->
+            <div class="product-card" data-category="electronics">
+
+                <div class="product-image">
+                    <img src="images/Product-9.png"
+                         alt="Portable External Hard Drive">
+                </div>
+
+                <span class="discount">22% OFF</span>
+
+                <div class="product-info">
+
+                    <h3>Portable External Hard Drive</h3>
+
+                    <p class="description">
+                        Fast USB 3.0 data transfer with USB 2.0 compatibility.
+                    </p>
+
+                    <div class="price">
+                        <span class="old-price">$64.00</span>
+                        <span class="new-price">$50.00</span>
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 10 -->
+            <div class="product-card" data-category="electronics">
+
+                <div class="product-image">
+                    <img src="images/Product-10.png"
+                         alt="SanDisk 1TB SSD">
+                </div>
+
+                <span class="discount">37% OFF</span>
+
+                <div class="product-info">
+
+                    <h3>SanDisk 1TB Internal SSD</h3>
+
+                    <p class="description">
+                        Upgrade your system for faster boot and application loading.
+                    </p>
+
+                    <div class="price">
+                        <span class="old-price">$109.00</span>
+                        <span class="new-price">$69.00</span>
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 11 -->
+            <div class="product-card" data-category="electronics">
+
+                <div class="product-image">
+                    <img src="images/Product-11.png"
+                         alt="Silicon Power 256GB SSD">
+                </div>
+
+                <span class="discount">47% OFF</span>
+
+                <div class="product-info">
+
+                    <h3>Silicon Power 256GB SSD</h3>
+
+                    <p class="description">
+                        Reliable 3D NAND flash storage for improved performance.
+                    </p>
+
+                    <div class="price">
+                        <span class="old-price">$109.00</span>
+                        <span class="new-price">$58.00</span>
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 12 -->
+            <div class="product-card" data-category="electronics">
+
+                <div class="product-image">
+                    <img src="images/Product-12.png"
+                         alt="WD 4TB Gaming Drive">
+                </div>
+
+                <span class="discount">11% OFF</span>
+
+                <div class="product-info">
+
+                    <h3>WD 4TB Gaming Drive</h3>
+
+                    <p class="description">
+                        Expand your gaming storage and enjoy more space.
+                    </p>
+
+                    <div class="price">
+                        <span class="old-price">$114.00</span>
+                        <span class="new-price">$101.00</span>
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div>
+                <h3>Customer Service</h3>
+                <a href="#">FAQs</a>
+                <a href="#">Return Policy</a>
+                <a href="#">Shipping Info</a>
+                <a href="#">Track Order</a>
+            </div>
+
+            <div>
+                <h3>Company</h3>
+                <a href="about.html">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Investors</a>
+                <a href="#">Sustainability</a>
+            </div>
+
+            <div>
+                <h3>Connect With Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">YouTube</a>
+            </div>
+
+            <div>
+                <h3>Contact Us</h3>
+                <p>Phone: +123-456-7890</p>
+                <p>Email: support@ecommerce.com</p>
+                <p>Working Hours: 9AM - 6PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                &copy; 2026 E-Commerce Store. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
