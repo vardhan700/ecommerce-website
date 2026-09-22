@@ -1405,3 +1405,58 @@ body {
 .menu-btn img {
     pointer-events: none;
 }
+/* Cart item layout */
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.cart-item img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.cart-item-info {
+    flex: 1;
+    padding: 10px;
+}
+
+.cart-item-info h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.cart-item-info p {
+    margin: 8px 0;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.quantity button {
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+.quantity span {
+    min-width: 25px;
+    text-align: center;
+}
+
+.cart-item-info > button {
+    padding: 6px 12px;
+    cursor: pointer;
+}
