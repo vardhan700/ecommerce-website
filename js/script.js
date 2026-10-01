@@ -8,7 +8,7 @@ const searchInput = document.getElementById("searchInput");
 // Get products from Django
 function getProducts() {
 
-    fetch("http://127.0.0.1:8000/api/products/")
+  fetch("https://ecommerce-website-py9m.onrender.com/api/products/")
         .then(response => response.json())
         .then(data => {
 
