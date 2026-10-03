@@ -8,19 +8,15 @@ const searchInput = document.getElementById("searchInput");
 // Get products from Django
 function getProducts() {
 
-fetch("https://ecommerce-website-py9m.onrender.com/api/products/")
-    .then(response => response.json())
-    .then(data => {
+    fetch("https://ecommerce-website-py9m.onrender.com/api/products/")
+        .then(response => response.json())
+        .then(data => {
 
-        products = data;
+            products = data;
 
-        showProducts(products);
-        updateCartCount();
-
-    })
-    .catch(error => {
-        console.log("Error getting products:", error);
-    });
+            showProducts(products);
+            updateCartCount();
+        })
         .catch(error => {
             console.log("Error getting products:", error);
         });
