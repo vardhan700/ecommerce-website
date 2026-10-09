@@ -101,7 +101,7 @@ checkoutForm.addEventListener("submit", function(event) {
     };
 
 
-    fetch("http://127.0.0.1:8000/api/orders/", {
+  fetch("https://ecommerce-website-pl9y.onrender.com/api/orders/", {
 
         method: "POST",
 
